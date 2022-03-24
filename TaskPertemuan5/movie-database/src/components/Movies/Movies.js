@@ -9,11 +9,11 @@ function Movies() {
           <div className={styles.movie}>
             <img
               className={styles.movie__image}
-              src="https://picsum.photos/300/400"
+              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/b12a6731e35878c9b560b76efe15e06d_480x.progressive.jpg?v=1573572672/300/400"
               alt=""
             />
-            <h3 className={styles.movie__title}>Movie Title</h3>
-            <p className={styles.movie__date}>Date Title</p>
+            <h3 className={styles.movie__title}>Stranger Things</h3>
+            <p className={styles.movie__date}>July 15, 2016</p>
           </div>
           <div className={styles.movie}>
             <img

@@ -20,23 +20,7 @@
   color: #4361ee;
   margin-bottom: 2rem;
   font-size: 2.44rem;
-  margin-right: 12rem;
-}
-
-
-.FormMovie__input {
-  width: 100%;
-  padding: 12px 3px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 7px;
-  box-sizing: border-box;
-}
-
-
-.FormMovie__label {
-  color: #64748b;
+  /* margin-right: 12rem; */
 }
 
 
@@ -69,7 +53,24 @@
   max-width: 100%;
   height: auto;
   border-radius: 25px;
-  margin-left: 12rem;
+  /* margin-left: 12rem; */
+}
+
+
+.FormMovie__input {
+  width: 100%;
+  padding: 12px 3px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+
+.FormMovie__label {
+  color: #64748b;
 }
 
 

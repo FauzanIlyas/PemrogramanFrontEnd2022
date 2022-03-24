@@ -47,14 +47,14 @@ function FormMovie() {
         </div>
         <div className="FormMovie__right">
           <h2 className={styles.FormMovie__title}>Add Movie</h2>
-          <tr>
+          {/* <tr> */}
             <label className={styles.FormMovie__label}>Title</label>
-            <input className={styles.FormMovie__input} disabled></input>
-          </tr>
-          <tr>
+            <input className={styles.FormMovie__input} enable></input>
+          {/* </tr>
+          <tr> */}
             <label className={styles.FormMovie__label}>Year</label>
-            <input className={styles.FormMovie__input} disabled></input>
-          </tr>
+            <input className={styles.FormMovie__input} enable></input>
+          {/* </tr> */}
           <button className={styles.FormMovie__button}>Submit</button>
         </div>
       </section>
