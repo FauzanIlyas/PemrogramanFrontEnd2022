@@ -2,26 +2,35 @@ import Movie from "../Movie/Movie";
 import styles from "./Movies.module.css";
 // import data movies
 import data from "../../utils/constants/data";
+import { useState } from "react";
+import { nanoid } from "nanoid";
 
 
 function Movies() {
   // membuat variable movies
-  const movies = data;
+  // const movies = data;
 
-  // fungsi tambah film
+  // membuat variable movies
+  const [movies, setMovies] = useState(data);
+
+  //  buat fungsi tambah film
   // dijalankan ketika tombol di klik
   function tambahfilm() {
     //console.log("tambah film");
     const movie = {
-      id: "xyz",
+      id: nanoid(5),
       title: "Spiral Jigsaw",
       year: "2021",
       type: "Movie",
       poster: "https://picsum.photos/300/400",
     };
 
-    movies.push(movie);
-    console.log(movies);
+    // movies.push(movie);
+    // console.log(movies);
+    // menambahkan movie ke state movies
+    // setMovies(movies.push(movie));
+    // spread operator copy dan merge array
+    setMovies([...movies, movie]);
   }
 
   return (

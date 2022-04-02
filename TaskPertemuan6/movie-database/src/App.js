@@ -1,4 +1,5 @@
 // Import Halaman Home
+// import Counter from "./components/Counter/Counter";
 import Home from "./pages/Home";
 
 function App() {
@@ -8,9 +9,10 @@ function App() {
    * Tag <> adalah React fragment
    */
   return (
-    <>
+    <div>
       <Home />
-    </>
+      {/* <Counter /> */}
+    </div>
   );
 }
 
