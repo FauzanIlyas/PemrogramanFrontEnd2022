@@ -20,6 +20,10 @@
   color: #64748b;
 }
 
+.movie__genre {
+  color: #64748b;
+}
+
 /* Medium Screen */
 @media (min-width: 768px) {
   .movie {

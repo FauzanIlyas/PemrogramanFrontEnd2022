@@ -13,14 +13,16 @@ function AddMovieForm(props) {
   // Destructing props: state movies
   const { movies, setMovies } = props;
 
-  // Membuat state title dan date
+  // Membuat state title, date, image dan genre
   const [title, setTitle] = useState("");
   const [date, setDate] = useState("");
   const [image, setImage] = useState("");
+  const [genre, setGenre] = useState("");
 
-  // Membuat state: isTitleError, isDateError
+  // Membuat state: isTitleError, isDateError dan isImageError
   const [isTitleError, setIsTitleError] = useState(false);
   const [isDateError, setIsDateError] = useState(false);
+  const [isImageError, setIsImagesError] = useState(false);
 
   /**
    * Membuat fungsi handleTitle
@@ -46,12 +48,28 @@ function AddMovieForm(props) {
     setDate(e.target.value);
   }
 
+  /**
+   * Membuat fungsi handleImage
+   * Dijalankan ketika nilai input berubah
+   */
   function handleImage(e) {
     /**
-     * Jalankan fungsi setDate.
+     * Jalankan fungsi setImage.
      * Set date nilai baru: input saat ini.
      */
     setImage(e.target.value);
+  }
+
+  /**
+   * Membuat fungsi handleGenre
+   * Dijalankan ketika nilai input berubah
+   */
+  function handleGenre(e) {
+    /**
+     * Jalankan fungsi setGenre.
+     * Set date nilai baru: input saat ini.
+     */
+    setGenre(e.target.value);
   }
 
   function handleSubmit(e) {
@@ -64,11 +82,20 @@ function AddMovieForm(props) {
     // Jika title kosong, set isTitleError true
     if (title === "") {
       setIsTitleError(true);
+      setIsDateError(false);
+      setIsImagesError(false);
     }
-    // Jika title kosong, set isTitleError true
+    // Jika date kosong, set isDateError true
     else if (date === "") {
       setIsTitleError(false);
       setIsDateError(true);
+      setIsImagesError(false);
+    }
+    // Jika images kosong, set isImageError true
+    else if (image === "") {
+      setIsTitleError(false);
+      setIsDateError(false);
+      setIsImagesError(true);
     }
     // Jika tidak, maka push movie dan set error false
     else {
@@ -76,8 +103,8 @@ function AddMovieForm(props) {
         id: nanoid(),
         title: title,
         year: date,
-        type: "Movie",
-        poster: "https://picsum.photos/300/400",
+        type: genre,
+        poster: image,
       };
 
       // SOLVED: HOW TO ADD MOVIE TO MOVIES :)
@@ -85,6 +112,7 @@ function AddMovieForm(props) {
 
       setIsTitleError(false);
       setIsDateError(false);
+      setIsImagesError(false);
     }
   }
 
@@ -135,13 +163,13 @@ function AddMovieForm(props) {
                 // Memberikan event onChange
                 onChange={handleDate}
               />
-              </div>
-              {/*
-               * Menambahkan infline if: operator &&
-               * Jika isDateError true maka render error
-               */}
-              {isDateError && <Alert>Date Wajib Diisi</Alert>}
-              <div className={styles.form__group}>
+            </div>
+            {/*
+             * Menambahkan infline if: operator &&
+             * Jika isDateError true maka render error
+             */}
+            {isDateError && <Alert>Date Wajib Diisi</Alert>}
+            <div className={styles.form__group}>
               <label htmlFor="image" className={styles.form__label}>
                 Input Image
               </label>
@@ -155,17 +183,30 @@ function AddMovieForm(props) {
                 // Memberikan event onChange
                 onChange={handleImage}
               />
-              </div>
-              <div className={styles.form__group}>
-              <label htmlFor="image" className={styles.form__label}>
-                Choose Genre
-              </label>
-              <select className={styles.form__select}>
-                <option value="horror">Horror</option>
-                <option value="action">Action</option>
-                <option value="drama">Drama</option>
-                <option value="historical">Historical</option>
-                <option value="war">War</option>
+            </div>
+            {/*
+             * Menambahkan infline if: operator &&
+             * Jika isDateError true maka render error
+             */}
+            {isImageError && <Alert>Wajib Diisi</Alert>}
+            <div className={styles.form__group}>
+              {/* <label htmlFor="image" className={styles.form__label}> */}
+              <label className={styles.form__label}>Choose Genre</label>
+              <select
+                className={styles.form__select}
+                id="genre"
+                name="genre"
+                // Memberikan value input: date
+                value={genre}
+                // Memberikan event onChange
+                onChange={handleGenre}
+              >
+                <option value="">Choose Genre</option>
+                <option value="Horror">Horror</option>
+                <option value="Action">Action</option>
+                <option value="Drama">Drama</option>
+                <option value="Historical">Historical</option>
+                <option value="War">War</option>
               </select>
             </div>
             <div>
