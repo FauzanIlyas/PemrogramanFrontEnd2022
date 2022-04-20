@@ -1,13 +1,20 @@
-import Footer from "../components/Footer";
-import Hello from "../components/Hello";
 import Navbar from "../components/Navbar";
+import Hello from "../components/Hello";
+import Dabals from "../components/Dabals/Dabals";
+import Dapro from "../components/Dapro/Dapro";
+import Footer from "../components/Footer";
+import data from "../utils/constants/indonesia";
+import { useState } from "react";
 
 function Main() {
+
+  const [dabals, setDabals] = useState(data);
+
   return (
     <main>
-      <h1>Final Project - Covid ID</h1>
-      <h2>Good Luck, Bestie</h2>
       <Hello />
+      <Dabals dabals={dabals} setDabals={setDabals} />
+      <Dapro />
     </main>
   );
 }
