@@ -35,10 +35,10 @@ function App() {
            */}
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/movie/create" element={<CreateMovie />} />
-            <Route path="/movie/popular" element={<PopularMovie />} />
-            <Route path="/movie/now" element={<NowPlayingMovie />} />
-            <Route path="/movie/top" element={<TopRatedMovie />} />
+            <Route path="/movie/Create" element={<CreateMovie />} />
+            <Route path="/movie/Popular" element={<PopularMovie />} />
+            <Route path="/movie/NowPlaying" element={<NowPlayingMovie />} />
+            <Route path="/movie/TopRated" element={<TopRatedMovie />} />
           </Routes>
         </Layout>
       </ThemeProvider>

@@ -12,13 +12,13 @@ const StyledMovie = styled.div`
   }
 
   h3 {
-    color: #4361ee;
+    color: #000000;
     font-size: 1.95rem;
     margin-bottom: 0.5rem;
   }
 
   p {
-    color: #64748b;
+    color: #000000;
   }
 
   @media (min-width: 768px) {
