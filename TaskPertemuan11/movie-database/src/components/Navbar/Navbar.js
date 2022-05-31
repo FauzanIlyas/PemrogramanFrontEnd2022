@@ -61,7 +61,7 @@ function Navbar() {
       <StyledNavbar>
         <nav>
           <StyledNavbar>
-            <h1>Movie App</h1>
+            <h1>ATLANTIS</h1>
           </StyledNavbar>
           <StyledNavbar>
             <ul>

@@ -1,8 +1,8 @@
 const theme = {
   // COLORS THEME
   colors: {
-    primary: "#4361ee",
-    secondary: "#b5179e",
+    primary: "#00000",
+    secondary: "#00000",
   },
 
   // Others: padding, margin, size

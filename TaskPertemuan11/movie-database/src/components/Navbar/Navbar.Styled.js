@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 const StyledNavbar = styled.div`
-  background-color: #000000;
+  background-color: #000;
   padding: 1rem;
-  color: #fff;
+  color: #FFFFFF;
 
   nav {
     display: flex;
@@ -27,7 +27,7 @@ const StyledNavbar = styled.div`
   }
 
   Link {
-    color: #fff;
+    color: #FFFFFF;
     text-decoration: none;
   }
 

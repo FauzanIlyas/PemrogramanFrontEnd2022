@@ -10,10 +10,6 @@ const StyledHero = styled.div`
     text-align: center;
   }
 
-  .hero__left {
-    margin-bottom: 1rem;
-  }
-
   h2 {
     color: #000000;
     margin-bottom: 1rem;
@@ -28,7 +24,7 @@ const StyledHero = styled.div`
 
   p {
     color: #000000;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   button {
@@ -37,6 +33,7 @@ const StyledHero = styled.div`
     border-radius: 10px;
     color: #FFFAFA;
     background-color: #000000;
+    text-decoration: none;
   }
 
   img {

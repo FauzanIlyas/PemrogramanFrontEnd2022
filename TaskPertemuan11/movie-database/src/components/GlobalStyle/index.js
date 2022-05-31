@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     font-family: 'Lucida Bright', sans-serif;
-    background-color: #FFFAFA;
+    background-color: #FFFFF0;
   }
 `;
 

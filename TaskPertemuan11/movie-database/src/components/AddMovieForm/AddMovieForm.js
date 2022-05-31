@@ -168,7 +168,7 @@ function AddMovieForm(props) {
               </select>
             </div>
             <div>
-              <Button full>Add Movie</Button>
+              <Button full variant="secondary">Add Movie</Button>
             </div>
           </form>
         </div>

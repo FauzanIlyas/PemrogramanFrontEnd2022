@@ -12,9 +12,10 @@ const Button = styled.button`
   padding: 0.8rem 2rem;
   border: none;
   border-radius: 10px;
-  background-color: #4361ee;
+  background-color: #000000;
   color: #fff;
   cursor: pointer;
+  text-decoration: none;
 
   /**
   * Menangkap props variant
