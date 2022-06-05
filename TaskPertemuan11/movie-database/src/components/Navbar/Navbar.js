@@ -3,7 +3,7 @@
  * Disimpan di object styles.
  */
 //import styles from "./Navbar.module.css";
-import StyledNavbar from "./Navbar.Styled";
+import StyledNavbar, { Container } from "./Navbar.Styled";
 // Import Link dari React Router
 import { Link } from "react-router-dom";
 
@@ -56,36 +56,70 @@ function Navbar() {
   //   );
   // }
 
-  return (
+//   return (
+//     <StyledNavbar>
+//       <StyledNavbar>
+//         <nav>
+//           <StyledNavbar>
+//             <h1>ATLANTIS</h1>
+//           </StyledNavbar>
+//           <StyledNavbar>
+//             <ul>
+//               <li>
+//                 <Link to="/">Home</Link>
+//               </li>
+//               <li>
+//                 <Link to="/movie/create">Add Movie</Link>
+//               </li>
+//               <li>
+//                 <Link to="/movie/popular">Popular</Link>
+//               </li>
+//               <li>
+//                 <Link to="/movie/NowPlaying">Now Playing</Link>
+//               </li>
+//               <li>
+//                 <Link to="/movie/TopRated">Top Rated</Link>
+//               </li>
+//             </ul>
+//           </StyledNavbar>
+//         </nav>
+//       </StyledNavbar>
+//     </StyledNavbar>
+//   );
+// }
+
+return (
+  <Container>
     <StyledNavbar>
-      <StyledNavbar>
-        <nav>
-          <StyledNavbar>
-            <h1>ATLANTIS</h1>
-          </StyledNavbar>
-          <StyledNavbar>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/movie/create">Add Movie</Link>
-              </li>
-              <li>
-                <Link to="/movie/popular">Popular</Link>
-              </li>
-              <li>
-                <Link to="/movie/NowPlaying">Now Playing</Link>
-              </li>
-              <li>
-                <Link to="/movie/TopRated">Top Rated</Link>
-              </li>
-            </ul>
-          </StyledNavbar>
-        </nav>
-      </StyledNavbar>
+      <div>
+        <h1>ATLANTIS</h1>
+      </div>
+      <div>
+        {/*
+         * Membuat Link/Navigasi.
+         * Menggunakan Link Component dari React Router
+         */}
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/movie/create">Add Movie</Link>
+          </li>
+          <li>
+            <Link to="/movie/popular">Popular</Link>
+          </li>
+          <li>
+            <Link to="/movie/now">Now Playing</Link>
+          </li>
+          <li>
+            <Link to="/movie/top">Top Rated</Link>
+          </li>
+        </ul>
+      </div>
     </StyledNavbar>
-  );
+  </Container>
+);
 }
 
 export default Navbar;
