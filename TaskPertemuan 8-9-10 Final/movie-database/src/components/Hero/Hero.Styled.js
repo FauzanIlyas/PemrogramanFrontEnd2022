@@ -17,7 +17,7 @@ const StyledHero = styled.div`
   }
 
   h3 {
-    color: #B22222;
+    color: #b22222;
     margin-bottom: 1rem;
     font-size: 1.59rem;
   }
@@ -31,7 +31,7 @@ const StyledHero = styled.div`
     padding: 0.8rem 2rem;
     border: none;
     border-radius: 10px;
-    color: #FFFAFA;
+    color: #fffafa;
     background-color: #000000;
   }
 
@@ -49,14 +49,16 @@ const StyledHero = styled.div`
   }
 
   @media screen and (min-width: 992px) {
-    max-width: 1200px;
-  }
+    /* .container {
+      max-width: 1200px;
+    } */
 
-  section {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
+    section {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+    }
   }
 `;
 
