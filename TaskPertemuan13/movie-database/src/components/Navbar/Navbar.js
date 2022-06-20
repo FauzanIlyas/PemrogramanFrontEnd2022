@@ -11,7 +11,7 @@ function Navbar() {
     <Container>
       <StyledNavbar>
         <div>
-          <h1>Movie App</h1>
+          <h1>MOVIE APP</h1>
         </div>
         <div>
           {/*

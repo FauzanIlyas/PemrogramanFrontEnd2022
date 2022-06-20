@@ -30,7 +30,7 @@ const StyledDetailMovie = styled.div`
   p {
     text-align: justify;
     margin-bottom: 2rem;
-    color: #64748b;
+    color: #fff;
   }
 
   // Medium Screen: 768px

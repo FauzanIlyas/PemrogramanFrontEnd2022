@@ -7,7 +7,6 @@ import Movies from "../components/Movies/Movies";
  * Menampilkan Halaman Home.
  */
 function Home() {
-  // Component Home dan Movies tidak perlu dikirim props movies.
   return (
     <>
       <Hero />

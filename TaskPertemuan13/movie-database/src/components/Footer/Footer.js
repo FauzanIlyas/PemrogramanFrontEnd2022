@@ -12,8 +12,8 @@ function Footer() {
   return (
     <Container>
       <StyledFooter>
-        <h2>Movie App</h2>
-        <p>Created by aufaroot18</p>
+        <h2>MOVIE APP</h2>
+        <p>CREATED BY FAUZAN ILYAS</p>
       </StyledFooter>
     </Container>
   );

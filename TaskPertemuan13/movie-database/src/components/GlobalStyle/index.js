@@ -15,7 +15,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Century Gothic', sans-serif;
+    background-color: #1a1a1d;
   }
 
   a {

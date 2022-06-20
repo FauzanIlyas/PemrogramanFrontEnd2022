@@ -19,19 +19,19 @@ const StyledHero = styled.section`
   }
 
   h2 {
-    color: #4361ee;
+    color: #fff;
     margin-bottom: 1rem;
     font-size: 2.44rem;
   }
 
   h3 {
-    color: #b5179e;
+    color: #c3073f;
     margin-bottom: 1rem;
     font-size: 1.59rem;
   }
 
   p {
-    color: #64748b;
+    color: #fff;
     margin-bottom: 2rem;
     text-align: justify;
   }

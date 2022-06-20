@@ -9,7 +9,7 @@ const Button = styled.button`
 
   // PROPS VARIANT
   background-color: ${(props) =>
-    props.theme.colors[props.variant] || props.theme.colors["primary"]};
+    props.theme.colors[props.variant] || props.theme.colors["secondary"]};
 
   // PROPS FULL
   ${({ full }) =>

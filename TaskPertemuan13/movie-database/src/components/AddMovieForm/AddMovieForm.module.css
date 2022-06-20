@@ -21,7 +21,7 @@
 
 .form__title {
   text-align: center;
-  color: #4361ee;
+  color: #c3073f;
   font-size: 2.44rem;
   margin-bottom: 1rem;
 }
@@ -34,6 +34,7 @@
 
 .form__label {
   margin-bottom: 1rem;
+  color: #fff;
 }
 
 .form__input {
@@ -44,7 +45,7 @@
 }
 
 .form__input:focus {
-  border: 1px solid #4361ee;
+  border: 1px solid #c3073f;
 }
 
 .form__select {
@@ -55,14 +56,14 @@
 }
 
 .form__select:focus {
-  border: 1px solid #4361ee;
+  border: 1px solid #c3073f
 }
 
 .form__button {
   padding: 0.8rem 2rem;
   border: none;
   border-radius: 10px;
-  background-color: #4361ee;
+  background-color: #c3073f;
   color: #fff;
   display: block;
   margin: 0 auto;
