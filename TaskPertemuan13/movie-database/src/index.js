@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 // Import Browser Router dari React Router
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 // Import Provider: untuk menghubungkan React dan Redux.
 import { Provider } from "react-redux";
 import store from "./store";
@@ -20,9 +20,9 @@ ReactDOM.render(
      * Agar URL browser dapat dimanipulasi oleh React Router
      */}
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")
