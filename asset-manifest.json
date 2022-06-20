@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/PemrogramanFrontEnd2022/static/css/main.cb5f398b.css",
-    "main.js": "/PemrogramanFrontEnd2022/static/js/main.72fcd475.js",
-    "static/js/787.d02d9e27.chunk.js": "/PemrogramanFrontEnd2022/static/js/787.d02d9e27.chunk.js",
-    "index.html": "/PemrogramanFrontEnd2022/index.html",
-    "main.cb5f398b.css.map": "/PemrogramanFrontEnd2022/static/css/main.cb5f398b.css.map",
-    "main.72fcd475.js.map": "/PemrogramanFrontEnd2022/static/js/main.72fcd475.js.map",
-    "787.d02d9e27.chunk.js.map": "/PemrogramanFrontEnd2022/static/js/787.d02d9e27.chunk.js.map"
+    "main.css": "/pemrogramanfrontend2022/static/css/main.cb5f398b.css",
+    "main.js": "/pemrogramanfrontend2022/static/js/main.e3b15b2b.js",
+    "static/js/787.d02d9e27.chunk.js": "/pemrogramanfrontend2022/static/js/787.d02d9e27.chunk.js",
+    "index.html": "/pemrogramanfrontend2022/index.html",
+    "main.cb5f398b.css.map": "/pemrogramanfrontend2022/static/css/main.cb5f398b.css.map",
+    "main.e3b15b2b.js.map": "/pemrogramanfrontend2022/static/js/main.e3b15b2b.js.map",
+    "787.d02d9e27.chunk.js.map": "/pemrogramanfrontend2022/static/js/787.d02d9e27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cb5f398b.css",
-    "static/js/main.72fcd475.js"
+    "static/js/main.e3b15b2b.js"
   ]
 }
