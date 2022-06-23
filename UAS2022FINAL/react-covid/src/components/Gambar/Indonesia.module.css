@@ -1,0 +1,30 @@
+/* Small Screen */
+.container {
+  margin: 5rem auto;
+  padding: 1rem;
+}
+
+.indonesia__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  /*
+           * Nothing TODO Here.
+           * We dont change style Hero. 
+           */
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .global__right {
+    flex-basis: 60%;
+  }
+}
