@@ -1,8 +1,21 @@
+/**
+ * Import CSS Module Footer.
+ * Disimpan di object styles.
+ */
+import StyledFooter, { Container } from "./Footer.styled";
+
 function Footer() {
+  /**
+   * Menggunakan styles yang sudah diimport.
+   * Memanggilnya menggunakan expression.
+   */
   return (
-    <>
-      <h2>Example Footer</h2>
-    </>
+    <Container>
+      <StyledFooter>
+        <h2>COVID APP</h2>
+        <p>CREATED BY FAUZAN ILYAS</p>
+      </StyledFooter>
+    </Container>
   );
 }
 

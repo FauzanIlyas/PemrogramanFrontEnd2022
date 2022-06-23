@@ -1,13 +1,18 @@
-import Footer from "../components/Footer";
 import Hello from "../components/Hello";
-import Navbar from "../components/Navbar";
+import Dabals from "../components/Dabals/Dabals";
+import Global from "../components/Gambar/Global";
+import data from "../utils/constants/indonesia";
+import { useState } from "react";
 
 function Main() {
+
+  const [dabals, setDabals] = useState(data);
+
   return (
     <main>
-      <h1>Final Project - Covid ID</h1>
-      <h2>Good Luck, Bestie</h2>
       <Hello />
+      <Dabals dabals={dabals} setDabals={setDabals} />
+      <Global />
     </main>
   );
 }
@@ -15,9 +20,9 @@ function Main() {
 function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Main />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
