@@ -1,7 +1,7 @@
 import Hello from "../components/Hello";
 import Dabals from "../components/Dabals/Dabals";
 import Global from "../components/Gambar/Global";
-import data from "../utils/constants/indonesia";
+import data from "../utils/constants/global";
 import { useState } from "react";
 
 function Main() {

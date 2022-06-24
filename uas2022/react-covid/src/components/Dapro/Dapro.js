@@ -4,6 +4,7 @@ import styles from "./Dapro.module.css";
 function Dapro() {
   // Destructing props: state movies
   const dapro = data.provinces;
+  let total = 0;
 
   return (
     <div>
@@ -21,14 +22,19 @@ function Dapro() {
                   <th>Dirawat</th>
                   <th>Meninggal</th>
                 </tr>
-                <tr>
-                  <td>1</td>
-                  <td>Aceh</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                  <td>0</td>
-                </tr>
+                {dapro.map((prov, key) => {
+                  total += 1;
+                  return (
+                    <tr key={key}>
+                      <td>{total}</td>
+                      <td>{prov.kota}</td>
+                      <td>{prov.kasus}</td>
+                      <td>{prov.sembuh}</td>
+                      <td>{prov.dirawat}</td>
+                      <td>{prov.meninggal}</td>
+                    </tr>
+                  );
+                })}
               </thead>
             </table>
           </div>
@@ -37,6 +43,5 @@ function Dapro() {
     </div>
   );
 }
-
 
 export default Dapro;

@@ -1,0 +1,48 @@
+/* Small Screen */
+.dasia {
+  margin-bottom: 1rem;
+}
+
+.dasia__image {
+  border-radius: 25px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.dasia__status {
+  color: #eeeeee;
+  font-size: 1.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.dasia__total {
+  color: #ffffff;
+}
+
+.dasia__genre {
+  color: #64748b;
+}
+
+.dasia__card {
+  background-color: rgb(194, 26, 26);
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .dasia {
+    flex-basis: 50%;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .dasia {
+    flex-basis: 25%;
+    padding: 1rem;
+  }
+}

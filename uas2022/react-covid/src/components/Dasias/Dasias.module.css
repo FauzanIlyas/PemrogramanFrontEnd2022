@@ -1,0 +1,35 @@
+/* Small Screen */
+.container {
+  margin: 5rem auto;
+}
+
+.dasias {
+  text-align: center;
+}
+
+.dasias__title {
+  margin-bottom: 1rem;
+  font-size: 2.44rem;
+  color: rgb(194, 26, 26);
+}
+
+.dasias__container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Medium Screen */
+@media (min-width: 768px) {
+  .dasias__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Large Screen */
+@media (min-width: 992px) {
+  .container {
+    max-width: 1200px;
+  }
+}
