@@ -1,11 +1,11 @@
 import Dasia from '../Dasia/Dasia';
 import styles from "./Dasias.module.css";
-import dataindo from "../../utils/constants/indonesia";
+import data from "../../utils/constants/indonesia";
 
 
 function Dasias() {
   // Destructing props: state movies
-  const dasias = dataindo.indonesia;
+  const dasias = data.indonesia;
 
   return (
     <div>
